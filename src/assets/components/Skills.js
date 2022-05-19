@@ -1,4 +1,8 @@
 import { skillData } from "../../data";
+// https://www.npmjs.com/package/react-scroll
+import { Link } from "react-scroll";
+// https://react-icons.github.io/react-icons/
+import { FaChevronCircleDown } from "react-icons/fa";
 
 const Skills = ({ theme }) => {
   const newTheme = `${theme} d-flex flex-column min-vh-100 justify-content-center`;
@@ -19,6 +23,9 @@ const Skills = ({ theme }) => {
           })}
         </div>
       </div>
+      <Link className="scroll" to="experience" smooth={true} duration={750}>
+          <FaChevronCircleDown id="scroll-down" />
+        </Link>
     </section>
   );
 };

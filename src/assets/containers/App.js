@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { githubUsername } from "../../data";
 import { AppLoading, AppError } from "../components/appLoadingError";
 import About from "../components/About";
+import Education from "../components/Education";
 import Skills from "../components/Skills";
-import Projects from "./Projects";
+// import Projects from "./Projects";
+import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -49,7 +51,8 @@ const App = () => {
   const homeData = {
     avatar: data.avatar_url,
     githubUrl: data.html_url,
-    name: data.name,
+    // name: data.name,
+    name: 'Sam Mankowski',
     link: data.blog,
     bio: data.bio,
     twitter: data.twitter_username,
@@ -59,15 +62,17 @@ const App = () => {
     <>
       <About theme={theme} setTheme={setTheme} {...homeData} />
       <main>
+        <Education theme={theme} />
         <Skills theme={theme} />
-        <Projects theme={theme} githubUsername={githubUsername} />
+        {/* <Projects theme={theme} githubUsername={githubUsername} /> */}
+        <Experience theme={theme} />
         <Contact theme={theme} avatar={homeData.avatar} name={homeData.name} />
       </main>
-      <Footer
+      {/* <Footer
         githubUrl={homeData.githubUrl}
         link={homeData.link}
         twitter={homeData.twitter}
-      />
+      /> */}
     </>
   );
 };

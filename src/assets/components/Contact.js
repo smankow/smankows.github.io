@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { FiMail } from "react-icons/fi";
 import { FaChevronCircleUp } from "react-icons/fa";
 import { contactInfo } from "../../data";
+import Photo from "../images/photo.jpg"
 
 const mail = `mailto:${contactInfo.email}`;
 const phone = `tel:${contactInfo.phone}`;
@@ -18,13 +19,13 @@ const Contact = ({ theme, avatar, name }) => {
         <hr />
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <img src={avatar} alt={name} />
+            <img src={Photo} alt={name} />
           </div>
           <div className="col-lg-6">
             <h3>{name}</h3>
             {contactInfo.email && contactInfo.email !== "" ? (
               <a href={mail}>
-                email: <span>{contactInfo.email}</span>
+                Email: <span>{contactInfo.email}</span>
               </a>
             ) : (
               ""
@@ -32,7 +33,7 @@ const Contact = ({ theme, avatar, name }) => {
             <br />
             {contactInfo.phone && contactInfo.phone !== "" ? (
               <a href={phone}>
-                phone: <span>{contactInfo.phone}</span>
+                Phone: <span>{contactInfo.phone}</span>
               </a>
             ) : (
               ""

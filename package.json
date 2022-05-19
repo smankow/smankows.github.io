@@ -1,6 +1,6 @@
 {
   "name": "github-react-portfolio-template",
-  "homepage": "https://yourGitHubUsername.github.io/your-app-name/",
+  "homepage": "https://yourGitHubUsername.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

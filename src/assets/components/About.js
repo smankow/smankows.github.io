@@ -30,9 +30,10 @@ const About = ({ theme, setTheme, githubUrl, name, link, bio, twitter }) => {
         />
         <h1>{name}</h1>
         <hr />
-        <p>{bio}</p>
-        <SocialLinks {...socialData} />
-        <Link className="scroll" to="skills" smooth={true} duration={750}>
+        {/* <p>{bio}</p> */}
+        <p>Front end React developer with almost 4 years experience in designing and developing web applications. Proficient in HTML, CSS, Javascript, and React. Experienced in Agile Scrum SDLC. Excellent communicator, adaptive fast learner, and passionate worker with a strong ability to handle difficult tasks.</p>
+        {/* <SocialLinks {...socialData} /> */}
+        <Link className="scroll" to="education" smooth={true} duration={750}>
           <FaChevronCircleDown id="scroll-down" />
         </Link>
       </div>

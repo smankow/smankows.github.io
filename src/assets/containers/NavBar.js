@@ -63,11 +63,30 @@ const NavBar = ({ theme, setTheme }) => {
               // Handle collapse on select
               onClick={() =>
                 setTimeout(() => {
-                  setExpanded(false);
+                  // setExpanded(false);
                 }, 500)
               }
             >
               About
+            </Link>
+          </Nav.Item>
+          <Nav.Item className="mr-3">
+            <Link
+              className="text-white"
+              activeClass="active"
+              to="education"
+              spy={true}
+              smooth={true}
+              duration={750}
+              offset={-8}
+              // Handle collapse on select
+              onClick={() =>
+                setTimeout(() => {
+                  // setExpanded(false);
+                }, 500)
+              }
+            >
+              Education
             </Link>
           </Nav.Item>
           <Nav.Item className="mr-3">
@@ -82,14 +101,14 @@ const NavBar = ({ theme, setTheme }) => {
               // Handle collapse on select
               onClick={() =>
                 setTimeout(() => {
-                  setExpanded(false);
+                  // setExpanded(false);
                 }, 500)
               }
             >
               Skills
             </Link>
           </Nav.Item>
-          <Nav.Item className="mr-3">
+          {/* <Nav.Item className="mr-3">
             <Link
               className="text-white"
               activeClass="active"
@@ -101,11 +120,30 @@ const NavBar = ({ theme, setTheme }) => {
               // Handle collapse on select
               onClick={() =>
                 setTimeout(() => {
-                  setExpanded(false);
+                  // setExpanded(false);
                 }, 500)
               }
             >
               Projects
+            </Link>
+          </Nav.Item> */}
+          <Nav.Item className="mr-3">
+            <Link
+              className="text-white"
+              activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              duration={750}
+              offset={-8}
+              // Handle collapse on select
+              onClick={() =>
+                setTimeout(() => {
+                  // setExpanded(false);
+                }, 500)
+              }
+            >
+              Experience
             </Link>
           </Nav.Item>
           <Nav.Item className="mr-3">
@@ -120,7 +158,7 @@ const NavBar = ({ theme, setTheme }) => {
               // Handle collapse on select
               onClick={() =>
                 setTimeout(() => {
-                  setExpanded(false);
+                  // setExpanded(false);
                 }, 500)
               }
             >
